@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li class="selected">Contact</li>
+                <li class="blog"><a href="blog">Blog</a>
+                <ul>
+                    <li><a href=articles/article1.html>Cuisine et là</a></li>
+                    <li><a href=articles/article2.html>Y kéa</a></li>
+                    <li><a href=articles/article3.html>car fours</a></li>
+                    <li><a href=articles/article4.html>Marmelade de f.</a></li>
+                </ul>
+                </li>
+                <li><a href="subscribe.html">Abonnez-vous</a></li>
+                <li><a href="statistics.html">Statistiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Page de contact</h1>
+        <form method="post">
+            <div>
+                <p>Sujet du message</p>
+                <input type="text" name="subject" required>
+            </div>
+            <div>
+                <p>Email</p>
+                <input id="email" type="email" name="mail" required>
+            </div>
+            <div>
+                <p>Nom & prénom</p>
+                <input type="text" name="full name" required>
+            </div>
+            <div id="message">
+                <p>Message</p>
+                <textarea name="message" required></textarea>
+            </div>
+            <button type="submit">
+                <p>Envoyer</p>
+                <i class="icon-arrow-right"></i>
+            </button>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li class="heading">Nos derniers articles</li>
+            <li><a href=articles/article1.html>Cuisine et là</a></li>
+            <li><a href=articles/article2.html>Y kéa</a></li>
+            <li><a href=articles/article3.html>car fours</a></li>
+        </ul>
+        <p>© Cavalcante Noa</p>
+        <p>IUT Lyon1 Bourg-en-Bresse 2022-2023</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
