@@ -48,15 +48,22 @@ nav ul li a {
 }
 
 .blog ul {
+    display: block;
     position: absolute;
-    display: none;
+    overflow: hidden;
     background-color: #f2f2f2;
-    padding: 0.5%;
+    padding: 1em;
+    max-height: 0;
+    opacity: 0;
     transform: translate(-30%);
+    transition: max-height 0.2s ease-out, opacity 0.02s ease-out;
+    transition-delay: 0s, 0.2s;
 }
 
 .blog:hover ul {
-    display: block;
+    max-height: 100%;
+    opacity: 1;
+    transition: max-height 1s ease-in, opacity 0.1s ease-in;
 }
 
 .blog ul li {
