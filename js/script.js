@@ -7,7 +7,3 @@ email.addEventListener("keypress", event => {
     if(re.test(email.value))
         message.style.visibility = "visible"
 })
-
-
-
-

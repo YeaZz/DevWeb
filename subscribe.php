@@ -6,32 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <script src="js/script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="blog"><a href="blog">Blog</a>
-                <ul>
-                    <li><a href=articles/article1.html>Cuisine et là</a></li>
-                    <li><a href=articles/article2.html>Y kéa</a></li>
-                    <li><a href=articles/article3.html>car fours</a></li>
-                    <li><a href=articles/article4.html>Marmelade de f.</a></li>
-                </ul>
-                </li>
-                <li class="selected">Abonnez-vous</li>
-                <li><a href="statistics">Statistiques</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <?php include("modules/header.php"); ?>
 
     <main>
-        <h1>Abonnez-vous</h1>
+    <h1>Abonnez-vous</h1>
         <form method="post">
             <div>
                 <p>Email</p>
@@ -84,15 +66,7 @@
         </form>
     </main>
 
-    <footer>
-        <ul>
-            <li class="heading">Nos derniers articles</li>
-            <li><a href=articles/article1.html>Cuisine et là</a></li>
-            <li><a href=articles/article2.html>Y kéa</a></li>
-            <li><a href=articles/article3.html>car fours</a></li>
-        </ul>
-        <p>© Cavalcante Noa</p>
-        <p>IUT Lyon1 Bourg-en-Bresse 2022-2023</p>
-    </footer>
+    <?php include("modules/footer.php"); ?>
+
 </body>
 </html>

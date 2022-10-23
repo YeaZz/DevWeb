@@ -36,7 +36,7 @@ nav ul li a {
   transition: 0.5s;
 }
 
-.selected {
+.active {
     color: black;
     text-shadow:
     0 0 6px rgba(202, 228, 225, 0.92),
