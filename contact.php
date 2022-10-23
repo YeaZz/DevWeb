@@ -13,7 +13,7 @@
     <?php include("modules/header.php"); ?>
 
     <main>
-    <h1>Page de contact</h1>
+        <h1>Page de contact</h1>
         <form method="post">
             <div>
                 <p>Sujet du message</p>
