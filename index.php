@@ -12,6 +12,8 @@
     <?php include("modules/header.php"); ?>
 
     <main>
+        <h1>Ceci est la page principale</h1>
+        <h3 style="text-align: center;">Profitez de ce chat</h3>
         <img src="img/cat.jpg" alt="chat">
     </main>
 
