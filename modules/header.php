@@ -1,10 +1,4 @@
-<?php
-    function redirect($page, $content) {
-        return ($_SERVER["PHP_SELF"] === $page)
-        ? "<li class='active'>" . $content . "</li>"
-        : "<li><a href=" . $page . ">" . $content . "</a></li>";
-    }
-?>
+<?php include_once(__DIR__ . "/../include/config.php"); ?>
   
 <header>
     <nav>

@@ -1,5 +1,4 @@
-<?php include(__DIR__ . "/../include/config.php"); ?>
-
+<?php include_once(__DIR__ . "/../include/config.php"); ?>
 
 <footer>
     <ul>

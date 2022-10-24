@@ -97,10 +97,13 @@ form {
 form div {
     font-size: 25px;
     margin: 10px;
+    width: 15em;
 }
 
-form div input, form div select {
-    width: 20em;
+form div input,
+form div select {
+    box-sizing: border-box;
+    width: 100%;
     font-size: 18px;
     padding: 0.6em 0.3em;
 }
@@ -122,7 +125,8 @@ form div textarea {
 }
 
 form div input[type="color"] {
-    height: 5em;
+    background-color: white;
+    height: 4em;
 }
 
 form button {
@@ -152,7 +156,7 @@ form button p {
 form button:hover p {
     transform: translateX(-6px);
 }
-  
+
 form button::after {
     content: "";
     background-color: rgba(30, 132, 242, 0.20);
