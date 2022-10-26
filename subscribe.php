@@ -45,11 +45,11 @@
                 </select>
             </div>
             <div>
-                <p>Photo</p>
+                <label for="picture">Photo</label>
                 <input type="file" name="picture" accept="image/png, image/jpeg" required>
             </div>
             <div>
-                <p>Couleur préférée</p>
+                <label for="color">Couleur préférée</label>
                 <input type="color" name="color">
             </div>
             <button type="submit">
