@@ -70,12 +70,18 @@ nav ul li a {
     margin-top: 1em;
 }
 
-h1 {
+h1,
+h3 {
     margin-top: 2%;
     text-align: center;
 }
 
-/* index.html */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 img {
     display: block; 
     margin: 5%;
@@ -86,7 +92,6 @@ img {
 }
 
 
-/* contact.html */
 form {
     display: flex;
     flex-direction: column;
@@ -177,6 +182,20 @@ form button:hover i {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 2em;
+}
+
+td {
+    padding: 25px;
+}
+
+td,
+th {
+    border: 1px solid black;
 }
 
 
