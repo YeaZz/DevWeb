@@ -10,12 +10,12 @@
     <main>
         <h1>Y quéa</h1>
         <div class="images">
-            <img src="<?= getImage(IMG_DIR . 'img-7') ?>" alt="Pont">
-            <img src="<?= getImage(IMG_DIR . 'img-8') ?>" alt="Fleuve">
-            <img src="<?= getImage(IMG_DIR . 'img-9') ?>" alt="Pont">
-            <img src="<?= getImage(IMG_DIR . 'img-10') ?>" alt="Coeur">
-            <img src="<?= getImage(IMG_DIR . 'img-11') ?>" alt="Status">
-            <img src="<?= getImage(IMG_DIR . 'img-12') ?>" alt="Stop">
+            <img src="<?= getImage('img-7') ?>" alt="Pont">
+            <img src="<?= getImage('img-8') ?>" alt="Fleuve">
+            <img src="<?= getImage('img-9') ?>" alt="Pont">
+            <img src="<?= getImage('img-10') ?>" alt="Coeur">
+            <img src="<?= getImage('img-11') ?>" alt="Status">
+            <img src="<?= getImage('img-12') ?>" alt="Stop">
         </div>
     </main>
 

@@ -10,12 +10,12 @@
     <main>
         <h1>Car fours</h1>
         <div class="images">
-            <img src="<?= getImage(IMG_DIR . 'img-13') ?>" alt="Rails">
-            <img src="<?= getImage(IMG_DIR . 'img-14') ?>" alt="Rails">
-            <img src="<?= getImage(IMG_DIR . 'img-15') ?>" alt="Maison">
-            <img src="<?= getImage(IMG_DIR . 'img-16') ?>" alt="Ciel">
-            <img src="<?= getImage(IMG_DIR . 'img-17') ?>" alt="Batiment">
-            <img src="<?= getImage(IMG_DIR . 'img-18') ?>" alt="Route">
+            <img src="<?= getImage('img-13') ?>" alt="Rails">
+            <img src="<?= getImage('img-14') ?>" alt="Rails">
+            <img src="<?= getImage('img-15') ?>" alt="Maison">
+            <img src="<?= getImage('img-16') ?>" alt="Ciel">
+            <img src="<?= getImage('img-17') ?>" alt="Batiment">
+            <img src="<?= getImage('img-18') ?>" alt="Route">
         </div>
     </main>
 

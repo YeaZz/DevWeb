@@ -3,16 +3,14 @@
     define("FULL_NAME", "© Cavalcante Noa");
     define("PHONE_NUMBER", "07 83 41 60 31");
     define("ADDRESS", "IUT Lyon1 Bourg-en-Bresse 2022-2023");
-
-    define("IMG_DIR", "../img/blog/");
     
     function getImage($name) {
         if (strpos($_SERVER["HTTP_ACCEPT"], "image/avif") !== false)
-            return $name . ".avif";
+            return "../img/blog/" . $name . ".avif";
         elseif (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false)
-            return $name . ".wepb";
+            return "../img/blog/" . $name . ".wepb";
         else
-            return $name . ".jpg";
+            return "../img/blog/" . $name . ".jpg";
     }
 
     function redirect($page, $content) {

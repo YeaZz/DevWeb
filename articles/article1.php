@@ -10,12 +10,12 @@
     <main>
         <h1>Cuisine et là</h1>
         <div class="images">
-            <img src="<?= getImage(IMG_DIR . 'img-1') ?>" alt="Pont">
-            <img src="<?= getImage(IMG_DIR . 'img-2') ?>" alt="Phare">
-            <img src="<?= getImage(IMG_DIR . 'img-3') ?>" alt="Pont">
-            <img src="<?= getImage(IMG_DIR . 'img-4') ?>" alt="Train">
-            <img src="<?= getImage(IMG_DIR . 'img-5') ?>" alt="Ville">
-            <img src="<?= getImage(IMG_DIR . 'img-6') ?>" alt="Route">
+            <img src="<?= getImage('img-1') ?>" alt="Pont">
+            <img src="<?= getImage('img-2') ?>" alt="Phare">
+            <img src="<?= getImage('img-3') ?>" alt="Pont">
+            <img src="<?= getImage('img-4') ?>" alt="Train">
+            <img src="<?= getImage('img-5') ?>" alt="Ville">
+            <img src="<?= getImage('img-6') ?>" alt="Route">
         </div>
     </main>
 
