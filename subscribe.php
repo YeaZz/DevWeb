@@ -7,33 +7,33 @@
 
     <main>
     <h1>Abonnez-vous</h1>
-        <form method="post">
+        <form method="post" action="modules/form.php">
             <div>
-                <p>Email</p>
+                <label for="email">Email</label>
                 <input type="email" name="mail" required>
             </div>
             <div>
-                <p>Mot de passe</p>
+                <label for="password">Mot de passe</label>
                 <input type="password" name="password" required>
             </div>
             <div>
-                <p>Nom & prénom</p>
-                <input type="text" name="full name" required>
+                <label for="full_name">Nom & prénom</label>
+                <input type="text" name="full_name" required>
             </div>
             <div>
-                <p>Date de naissance</p>
+                <label for="birthdate">Date de naissance</label>
                 <input type="date" name="birthdate" required>
             </div>
             <div>
-                <p>Adresse</p>
+                <label for="address">Adresse</label>
                 <input type="text" name="address" required>
             </div>
             <div>
-                <p>Code postal</p>
+                <label for="postal">Code postal</label>
                 <input type="text" name="postal" pattern="[0-9]{5}" required>
             </div>
             <div>
-                <p>Ville</p>
+                <label for="city">Ville</label>
                 <input type="text" name="city" required>
             </div>
             <div>

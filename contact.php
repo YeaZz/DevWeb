@@ -7,21 +7,21 @@
 
     <main>
         <h1>Page de contact</h1>
-        <form method="post">
+        <form method="post" action="modules/form.php">
             <div>
-                <p>Sujet du message</p>
+                <label for="subject">Sujet du message</label>
                 <input type="text" name="subject" required>
             </div>
             <div>
-                <p>Email</p>
+                <label for="email">Email</label>
                 <input id="email" type="email" name="mail" required>
             </div>
             <div>
-                <p>Nom & prénom</p>
-                <input type="text" name="full name" required>
+                <label for="full_name">Nom & prénom</label>
+                <input type="text" name="full_name" required>
             </div>
             <div id="message">
-                <p>Message</p>
+                <label for="message">Message</label>
                 <textarea name="message" required></textarea>
             </div>
             <button type="submit">
