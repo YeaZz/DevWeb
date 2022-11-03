@@ -10,31 +10,31 @@
         <form action="form.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="email">Email</label>
-                <input type="email" name="mail" required />
+                <input id="email" type="email" name="mail" required />
             </div>
             <div>
                 <label for="password">Mot de passe</label>
-                <input type="password" name="password" required />
+                <input id="password" type="password" name="password" required />
             </div>
             <div>
                 <label for="full_name">Nom & prénom</label>
-                <input type="text" name="full_name" required />
+                <input id="full_name" type="text" name="full_name" required />
             </div>
             <div>
                 <label for="birthdate">Date de naissance</label>
-                <input type="date" name="birthdate" required />
+                <input id="birthdate" type="date" name="birthdate" required />
             </div>
             <div>
                 <label for="address">Adresse</label>
-                <input type="text" name="address" required>
+                <input id="address" type="text" name="address" required>
             </div>
             <div>
                 <label for="postal">Code postal</label>
-                <input type="text" name="postal" pattern="[0-9]{5}" required />
+                <input id="postal" type="text" name="postal" pattern="[0-9]{5}" required />
             </div>
             <div>
                 <label for="city">Ville</label>
-                <input type="text" name="city" required>
+                <input id="city" type="text" name="city" required>
             </div>
             <div>
                 <p>Genre</p>
@@ -46,11 +46,11 @@
             </div>
             <div>
                 <label for="picture">Photo</label>
-                <input type="file" name="picture" accept="image/png, image/jpeg" required />
+                <input id="picture" type="file" name="picture" accept="image/png, image/jpeg" required />
             </div>
             <div>
                 <label for="color">Couleur préférée</label>
-                <input type="color" name="color">
+                <input id="color" type="color" name="color">
             </div>
             <button type="submit">
                 <p>S'incrire</p>

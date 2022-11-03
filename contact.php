@@ -10,7 +10,7 @@
         <form method="post" action="form.php">
             <div>
                 <label for="subject">Sujet du message</label>
-                <input type="text" name="subject" required>
+                <input id="subject" type="text" name="subject" required>
             </div>
             <div>
                 <label for="email">Email</label>
@@ -18,10 +18,10 @@
             </div>
             <div>
                 <label for="full_name">Nom & prénom</label>
-                <input type="text" name="full_name" required>
+                <input id="full_name" type="text" name="full_name" required>
             </div>
             <div id="message">
-                <label for="message">Message</label>
+                <label>Message</label>
                 <textarea name="message" required></textarea>
             </div>
             <button type="submit">
