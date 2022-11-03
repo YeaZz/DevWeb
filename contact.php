@@ -7,7 +7,7 @@
 
     <main>
         <h1>Page de contact</h1>
-        <form method="post" action="modules/form.php">
+        <form method="post" action="form.php">
             <div>
                 <label for="subject">Sujet du message</label>
                 <input type="text" name="subject" required>

@@ -7,22 +7,22 @@
 
     <main>
     <h1>Abonnez-vous</h1>
-        <form method="post" action="modules/form.php">
+        <form action="form.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="email">Email</label>
-                <input type="email" name="mail" required>
+                <input type="email" name="mail" required />
             </div>
             <div>
                 <label for="password">Mot de passe</label>
-                <input type="password" name="password" required>
+                <input type="password" name="password" required />
             </div>
             <div>
                 <label for="full_name">Nom & prénom</label>
-                <input type="text" name="full_name" required>
+                <input type="text" name="full_name" required />
             </div>
             <div>
                 <label for="birthdate">Date de naissance</label>
-                <input type="date" name="birthdate" required>
+                <input type="date" name="birthdate" required />
             </div>
             <div>
                 <label for="address">Adresse</label>
@@ -30,7 +30,7 @@
             </div>
             <div>
                 <label for="postal">Code postal</label>
-                <input type="text" name="postal" pattern="[0-9]{5}" required>
+                <input type="text" name="postal" pattern="[0-9]{5}" required />
             </div>
             <div>
                 <label for="city">Ville</label>
@@ -46,7 +46,7 @@
             </div>
             <div>
                 <label for="picture">Photo</label>
-                <input type="file" name="picture" accept="image/png, image/jpeg" required>
+                <input type="file" name="picture" accept="image/png, image/jpeg" required />
             </div>
             <div>
                 <label for="color">Couleur préférée</label>
