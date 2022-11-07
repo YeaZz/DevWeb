@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <?php include("modules/head.php") ?>
@@ -7,7 +9,7 @@
 
     <main>
         <h1>Page de contact</h1>
-        <form method="post" action="form.php">
+        <form action="treatment/form.php" method="post">
             <div>
                 <label for="subject">Sujet du message</label>
                 <input id="subject" type="text" name="subject" required>
