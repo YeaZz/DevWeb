@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <?php include("modules/head.php") ?>
@@ -6,8 +8,8 @@
     <?php include("modules/header.php"); ?>
 
     <main>
-    <h1>Abonnez-vous</h1>
-        <form action="form.php" method="post" enctype="multipart/form-data">
+        <h1>Abonnez-vous</h1>
+        <form action="treatment/form.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="email">Email</label>
                 <input id="email" type="email" name="mail" required />
