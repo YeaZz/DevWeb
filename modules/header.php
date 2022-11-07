@@ -1,5 +1,5 @@
 <?php include_once(__DIR__ . "/../include/config.php"); ?>
-  
+
 <header>
     <nav>
         <ul>
@@ -16,6 +16,13 @@
             </li>
             <?= redirect("/subscribe.php", "Abonnez-vous") ?>
             <?= redirect("/statistics.php", "Statistiques") ?>
+            <?php if (isset($_SESSION["admin"])): ?>
+                <li>
+                    <form action="treatment/logout.php" method="post">
+                        <button class="logout" type="submit"><a>Bonjour admin</a></button>
+                    </form>
+                </li>
+            <?php else: echo redirect("/login.php", "Se connecter"); endif ?>
         </ul>
     </nav>
 </header>
