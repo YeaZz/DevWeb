@@ -10,7 +10,7 @@
     <main>
         <h1>Ceci est la page principale</h1>
         <h2>Profitez de ce chat</h2>
-        <img src="img/cat.jpg" alt="chat">
+        <img class="main-image" src="img/cat.jpg" alt="chat">
     </main>
 
     <?php include("modules/footer.php"); ?>
