@@ -8,7 +8,7 @@
     <?php include("modules/header.php"); ?>
 
     <main style="margin: 5em 0;">
-        <h1>From the Firehose</h1>
+        <h1 style="margin-bottom: 3em;">From the Firehose</h1>
         <div style="margin: 0 10em;">
             <h3>Sample blog post</h3>
             <p>January 1, 2014 by <a href="#">Mark</a></p>
