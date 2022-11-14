@@ -15,7 +15,6 @@
                 </ul>
             </li>
             <?= redirect("/subscribe.php", "Abonnez-vous") ?>
-            <?= redirect("/statistics.php", "Statistiques") ?>
             <?php if (isset($_SESSION["admin"])): ?>
                 <li>
                     <form action="treatment/logout.php" method="post">
