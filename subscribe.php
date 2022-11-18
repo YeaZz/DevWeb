@@ -9,7 +9,7 @@
 
     <main>
         <h1>Abonnez-vous</h1>
-        <form action="treatment/form.php" method="post" enctype="multipart/form-data">
+        <form action="treatment/subscribe.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="email">Email</label>
                 <input id="email" type="email" name="mail" required />
