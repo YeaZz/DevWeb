@@ -12,14 +12,14 @@
         <form action="treatment/subscribe.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="email">Email</label>
-                <input id="email" type="email" name="mail" required />
+                <input id="email" type="email" name="email" required />
             </div>
             <div>
                 <label for="password">Mot de passe</label>
                 <input id="password" type="password" name="password" required />
             </div>
             <div>
-                <label for="lastname">Nom</label>
+            <label for="lastname">Nom</label>
                 <input id="lastname" type="text" name="lastname" required />
             </div>
             <div>
