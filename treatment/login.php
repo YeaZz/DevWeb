@@ -16,7 +16,7 @@ if (!empty($_POST) && isset($_POST["email"]) && isset($_POST["password"])) {
         $result = $query->fetch();
         if ($result) {
             $_SESSION["id"] = $result["id"];
-            $_SESSION["fullname"] = $result["lastname"] . " " . $result["name"];
+            $_SESSION["fullname"] = $result["lastname"] . " " . $result["firstname"];
             $_SESSION["lastname"] = $result["lastname"];
             $_SESSION["firstname"] = $result["firstname"];
             $_SESSION["email"] = $email;
