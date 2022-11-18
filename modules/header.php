@@ -15,10 +15,10 @@
                 </ul>
             </li>
             <?= redirect("/subscribe.php", "Abonnez-vous") ?>
-            <?php if (isset($_SESSION["admin"])): ?>
+            <?php if (isset($_SESSION["email"])): ?>
                 <li>
                     <form action="treatment/logout.php" method="post">
-                        <button class="logout" type="submit"><a>Bonjour admin</a></button>
+                        <button class="logout" type="submit"><a>Bonjour <?= $_SESSION["fullname"]?></a></button>
                     </form>
                 </li>
             <?php else: echo redirect("/login.php", "Se connecter"); endif ?>

@@ -11,8 +11,8 @@
         <h1>Formulaire de connexion</h1>  
         <form action="treatment/login.php" method="POST">
             <div>
-                <label for="id">Identifiant</label>
-                <input id="id" name="id" type="text" required autofocus>
+                <label for="id">Email</label>
+                <input id="email" name="email" type="text" required autofocus>
             </div>
             <div>
                 <label for="password">Mot de passe</label>
