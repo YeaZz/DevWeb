@@ -19,8 +19,12 @@
                 <input id="password" type="password" name="password" required />
             </div>
             <div>
-                <label for="full_name">Nom & prénom</label>
-                <input id="full_name" type="text" name="full_name" required />
+                <label for="lastname">Nom</label>
+                <input id="lastname" type="text" name="lastname" required />
+            </div>
+            <div>
+                <label for="firstname">Prénom</label>
+                <input id="firstname" type="text" name="firstname" required />
             </div>
             <div>
                 <label for="birthdate">Date de naissance</label>
