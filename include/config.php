@@ -21,6 +21,7 @@ function redirect($page, $content) {
 
 try {
     $pdo = new PDO('mysql:host=iutbg-lamp.univ-lyon1.fr;dbname=p2107540' , 'p2107540', '12107540');
+    $pdo->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION );
 } catch (PDOException $e) {
     $pdo = null;
 }
