@@ -45,9 +45,9 @@
             <div>
                 <p>Genre</p>
                 <select name="genre">
+                    <option value="none" selected>Non renseigné</option>
                     <option value="man">Homme</option>
                     <option value="woman">Femme</option>
-                    <option value="none" selected>Non renseigné</option>
                 </select>
             </div>
             <div>
