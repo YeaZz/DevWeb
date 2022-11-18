@@ -17,7 +17,7 @@
             <?= redirect("/subscribe.php", "Abonnez-vous") ?>
             <?php if (isset($_SESSION["id"])): ?>
                 <li>
-                    <form action="treatment/logout.php" method="post">
+                    <form action="/treatment/logout.php" method="post">
                         <button class="logout" type="submit"><a>Bonjour <?= $_SESSION["fullname"]?></a></button>
                     </form>
                 </li>
