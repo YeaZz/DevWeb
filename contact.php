@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php
+
+session_start();
+if (!isset($_SESSION["firstname"]))
+    header("Location: ../login.php");
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,18 +15,10 @@
 
     <main>
         <h1>Page de contact</h1>
-        <form action="treatment/form.php" method="post">
+        <form action="treatment/contact.php" method="post">
             <div>
                 <label for="subject">Sujet du message</label>
                 <input id="subject" type="text" name="subject" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input id="email" type="email" name="mail" required>
-            </div>
-            <div>
-                <label for="full_name">Nom & prénom</label>
-                <input id="full_name" type="text" name="full_name" required>
             </div>
             <div id="message">
                 <label>Message</label>
@@ -35,6 +33,5 @@
 
     <?php include("modules/footer.php"); ?>
 
-    <script src="js/script.js"></script>
 </body>
 </html>

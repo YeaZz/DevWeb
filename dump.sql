@@ -17,7 +17,7 @@ use p2107540;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `firstname` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `lastname` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `password` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `town` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -28,9 +28,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1501 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+CREATE TABLE IF NOT EXISTS `messages` (
+	`id` int unsigned NOT NULL AUTO_INCREMENT,
+	`subject` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+	`user` int(11) unsigned NOT NULL,
+	`message` varchar(1500) COLLATE utf8_bin DEFAULT NULL,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY (`user`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
 -- Export de données de la table iut.users : ~1 500 rows (environ)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `email`, `name`, `lastname`, `password`, `town`, `postal`, `address`, `active`, `updated`) VALUES
+INSERT INTO `users` (`id`, `email`, `firstname`, `lastname`, `password`, `town`, `postal`, `address`, `active`, `updated`) VALUES
 	(1, 'consectetuer@nislQuisquefringilla.com', 'Joel', 'Bray', 'XMB37JHA8WE', 'Rouyn-Noranda', '76863', '2272 Mauris, Rd.', '0', '2020-11-20 10:33:02'),
 	(2, 'lectus.pede.ultrices@sem.edu', 'Blossom', 'Huber', 'WNR75WHJ3NC', 'Ribeirão das Neves', '67559', '597-7433 Magnis Road', '1', '2020-11-20 10:33:02'),
 	(3, 'dapibus.rutrum.justo@aliquam.net', 'Otto', 'Becker', 'SDV07JPX8IF', 'Oklahoma City', '43689', 'P.O. Box 777, 8287 Consectetuer Street', '0', '2020-11-20 10:33:02'),
