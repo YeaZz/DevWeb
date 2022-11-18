@@ -10,30 +10,29 @@ if (!empty($_POST) && isset($_POST["email"]) && isset($_POST["password"]) && iss
     $lastname = $_POST["lastname"];
     $firstname = $_POST["firstname"];
     $address = $_POST["address"];
-    $postal = $_POST["email"];
+    $postal = $_POST["postal"];
     $city = $_POST["city"];
-
     if ($pdo != null) {
-
-        $query = $pdo->prepare("SELECT * FROM p2107540.users WHERE email = :email");
+        $query = $pdo->prepare("SELECT * FROM users WHERE email = :email");
         $query->execute([
             'email' => $email
         ]);
         $result = $query->fetch();
-        if ($result) return;
-
-        $query = $pdo->prepare("INSERT INTO p2107540.users VALUES (0, :email, :firstname, :lastname, :password, :city, :postal, :address, 1, now())");
-        $query->execute([
-            'email' => $email,
-            'firstname' => $firstname,
-            'lastname' => $lastname,
-            'password' => $password,
-            'city' => $city,
-            'postal' => $postal,
-            'address' => $address
-        ]);
-        header("../index.php");
-        return;
+        if (!$result) {
+            $date=date("Y-m-d H:i:s");
+            $query = $pdo->prepare("INSERT INTO users (email, firstname, lastname, password, town, postal, address, active, updated) VALUES (:email, :firstname, :lastname, :password, :city, :postal, :address, 1, '{$date}')");
+            $query->execute([
+                'email' => $email,
+                'firstname' => $firstname,
+                'lastname' => $lastname,
+                'password' => $password,
+                'city' => $city,
+                'postal' => $postal,
+                'address' => $address
+            ]);
+            header("Location: ../login.php");
+            return;
+        }
     }
 }
-header("Location: ../login.php");
+header("Location: ../subscribe.php");
