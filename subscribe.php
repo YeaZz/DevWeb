@@ -28,7 +28,7 @@
             </div>
             <div>
                 <label for="birthdate">Date de naissance</label>
-                <input id="birthdate" type="date" name="birthdate" required />
+                <input id="birthdate" type="date" name="birthdate" />
             </div>
             <div>
                 <label for="address">Adresse</label>
@@ -52,7 +52,7 @@
             </div>
             <div>
                 <label for="picture">Photo</label>
-                <input id="picture" type="file" name="picture" accept="image/png, image/jpeg" required />
+                <input id="picture" type="file" name="picture" accept="image/png, image/jpeg" />
             </div>
             <div>
                 <label for="color">Couleur préférée</label>
