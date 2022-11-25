@@ -10,7 +10,7 @@ if (!empty($_POST) && isset($_POST["email"]) && isset($_POST["password"]) && iss
     $lastname = $_POST["lastname"];
     $firstname = $_POST["firstname"];
     $address = $_POST["address"];
-    $postal = $_POST["postal"];
+    $postal = $_POST["postal"]; 
     $city = $_POST["city"];
     if ($pdo != null) {
         $query = $pdo->prepare("SELECT * FROM users WHERE email = :email");
@@ -19,13 +19,14 @@ if (!empty($_POST) && isset($_POST["email"]) && isset($_POST["password"]) && iss
         ]);
         $result = $query->fetch();
         if (!$result) {
-            $date=date("Y-m-d H:i:s");
+            $date = date("Y-m-d H:i:s");
+            $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
             $query = $pdo->prepare("INSERT INTO users (email, firstname, lastname, password, town, postal, address, active, updated) VALUES (:email, :firstname, :lastname, :password, :city, :postal, :address, 1, '{$date}')");
             $query->execute([
                 'email' => $email,
                 'firstname' => $firstname,
                 'lastname' => $lastname,
-                'password' => $password,
+                'password' => $password_hash,
                 'city' => $city,
                 'postal' => $postal,
                 'address' => $address
