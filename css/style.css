@@ -136,9 +136,9 @@ form div textarea {
     resize: none;
 }
 
-#message {
+/*#message {
     visibility: hidden;
-}
+}*/
 
 form div input[type="color"] {
     background-color: white;
