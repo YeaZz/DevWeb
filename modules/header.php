@@ -15,12 +15,7 @@
                 </ul>
             </li>
             <?= redirect("/subscribe.php", "Abonnez-vous") ?>
-            <?php if (isset($_SESSION["id"])): ?>
-                <li>
-                    <form action="/treatment/logout.php" method="post">
-                        <button class="logout" type="submit"><a>Bonjour <?= $_SESSION["fullname"]?></a></button>
-                    </form>
-                </li>
+            <?php if (isset($_SESSION["id"])): echo redirect("/treatment/logout.php", "Bonjour {$_SESSION["fullname"]}") ?>
             <?php else: echo redirect("/login.php", "Se connecter"); endif ?>
         </ul>
     </nav>
