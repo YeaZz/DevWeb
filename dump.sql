@@ -5,7 +5,12 @@
 -- HeidiSQL Version:             9.4.0.5125
 -- --------------------------------------------------------
 
-use p2107540;
+USE p2107540;
+
+DROP TABLE IF EXISTS `messages`;
+DROP TABLE IF EXISTS `users`;
+
+-- select * from users order by id DESC;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
@@ -14,7 +19,7 @@ use p2107540;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Export de la structure de la table iut. users
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `firstname` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -28,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1501 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
-CREATE TABLE IF NOT EXISTS `messages` (
+CREATE TABLE `messages` (
 	`id` int unsigned NOT NULL AUTO_INCREMENT,
 	`subject` varchar(255) COLLATE utf8_bin DEFAULT NULL,
 	`user` int(11) unsigned NOT NULL,
