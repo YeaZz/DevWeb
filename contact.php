@@ -13,7 +13,7 @@ if (!isset($_SESSION["firstname"]))
 
     <?php include("modules/header.php"); ?>
 
-    <main>
+    <main style="margin: 6em 0;">
         <h1>Page de contact</h1>
         <form action="treatment/contact.php" method="post">
             <div>
@@ -22,7 +22,7 @@ if (!isset($_SESSION["firstname"]))
             </div>
             <div id="message">
                 <label>Message</label>
-                <textarea name="message" required></textarea>
+                <textarea name="message" maxlength="1500" required></textarea>
             </div>
             <button type="submit">
                 <p>Envoyer</p>
